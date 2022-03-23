@@ -59,5 +59,31 @@ namespace WPDP_Flash_Constructor
                 CreateNoWindow = true
             });
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = "cmd",
+                    Arguments = "/c .\\tools\\7z.exe x osnova.7z -oW:\\ & .\\tools\\7z.exe x ws.7z -oW:\\",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                });
+                MessageBox.Show("Операция успешно завершена");
+            }
+            else
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = "cmd",
+                    Arguments = "/c .\\tools\\7z.exe x osnova.7z -oW:\\",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                });
+                MessageBox.Show("Операция успешно завершена");
+            }
+        }
     }
 }
