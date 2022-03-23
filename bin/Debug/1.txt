@@ -1,0 +1,6 @@
+Drives Count: 4
+
+*DRIVE 0: Apacer AS350 128GB             (119.2 GB, C: G:)
+ DRIVE 1: WDC WD2500AAKS-00VSA0          (232.9 GB, D:)
+ DRIVE 2: SAMSUNG SP2504C                (232.8 GB, T:)
+ DRIVE 3: Seagate Expansion              (931.5 GB, S:)
