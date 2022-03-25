@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
+
 namespace WPDP_Flash_Constructor
 {
     public partial class Form2 : Form
@@ -25,13 +26,9 @@ namespace WPDP_Flash_Constructor
         }
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            
         }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex >= 0)
             {
@@ -45,12 +42,12 @@ namespace WPDP_Flash_Constructor
                     CreateNoWindow = true
                 });
                 process2.WaitForExit();
-                MessageBox.Show("Этап завершён.");
+                MessageBox.Show("Этап завершён./Stage complete.");
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
+            
             Process.Start(new ProcessStartInfo
             {
                 FileName = "cmd",
@@ -59,31 +56,17 @@ namespace WPDP_Flash_Constructor
                 CreateNoWindow = true
             });
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = "cmd",
-                    Arguments = "/c .\\tools\\7z.exe x osnova.7z -oW:\\ & .\\tools\\7z.exe x ws.7z -oW:\\",
-                    UseShellExecute = false,
-                    CreateNoWindow = true
-                });
-                MessageBox.Show("Операция успешно завершена");
-            }
-            else
-            {
-                Process.Start(new ProcessStartInfo
+                Process p2 = Process.Start(new ProcessStartInfo
                 {
                     FileName = "cmd",
                     Arguments = "/c .\\tools\\7z.exe x osnova.7z -oW:\\",
                     UseShellExecute = false,
                     CreateNoWindow = true
                 });
-                MessageBox.Show("Операция успешно завершена");
-            }
-        }
+                p2.WaitForExit();
+                MessageBox.Show("Операция завершена./Operation has complete");
+        }            
     }
 }
