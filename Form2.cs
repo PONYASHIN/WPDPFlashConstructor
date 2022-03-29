@@ -3,7 +3,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
-
 namespace WPDP_Flash_Constructor
 {
     public partial class Form2 : Form
@@ -24,10 +23,6 @@ namespace WPDP_Flash_Constructor
                 if (line.Contains("DRIVE"))
                     comboBox1.Items.Add(line);
         }
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            
-        }
         private void Button1_Click(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex >= 0)
@@ -35,38 +30,19 @@ namespace WPDP_Flash_Constructor
                 Process process2 = Process.Start(new ProcessStartInfo
                 {
                     FileName = "cmd.exe",
-                    Arguments = "/c .\\tools\\USBPREP.exe DRIVE=" + comboBox1.SelectedIndex + " clean & .\\tools\\USBPREP.exe DRIVE=" + comboBox1.SelectedIndex + " VISTA FORCELBA " +
-                    "& .\\tools\\USBPREP.exe DRIVE=" + comboBox1.SelectedIndex + " volume=WPDP_USB & .\\tools\\BOOTICE.exe /DEVICE=" + comboBox1.SelectedIndex +
-                    ":0 /partitions /activate /assign_letter=W",
+                    Arguments = "/c .\\tools\\USBPREP.exe DRIVE=" + comboBox1.SelectedIndex + " VISTA FORCELBA fat32"+ ".\\tools\\USBPREP.exe DRIVE=" + comboBox1.SelectedIndex + " VOLUME=WPDP_Flesh" + 
+                    "& .\\tools\\BOOTICE.exe /DEVICE=" + comboBox1.SelectedIndex + ":0 /partitions /activate" + "& .\\tools\\BOOTICE.exe /DEVICE=" + comboBox1.SelectedIndex + 
+                    ":0 /partitions /delete_letter" + "& .\\tools\\BOOTICE.exe /DEVICE=" + comboBox1.SelectedIndex + ":0 /partitions /assign_letter=W",
                     UseShellExecute = false,
                     CreateNoWindow = true
                 });
                 process2.WaitForExit();
-                MessageBox.Show("Этап завершён./Stage complete.");
             }
         }
-        private void Button2_Click(object sender, EventArgs e)
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
-            Process.Start(new ProcessStartInfo
-            {
-                FileName = "cmd",
-                Arguments = "/c taskkill /im WPDP_Flash_Constructor.exe & taskkill /im WPDP_Flash_Constructor.exe",
-                UseShellExecute = false,
-                CreateNoWindow = true
-            });
+            Application.Exit();
+            File.Delete(@".\tools\1.txt");
         }
-        private void Button3_Click(object sender, EventArgs e)
-        {
-                Process p2 = Process.Start(new ProcessStartInfo
-                {
-                    FileName = "cmd",
-                    Arguments = "/c .\\tools\\7z.exe x osnova.7z -oW:\\",
-                    UseShellExecute = false,
-                    CreateNoWindow = true
-                });
-                p2.WaitForExit();
-                MessageBox.Show("Операция завершена./Operation has complete");
-        }            
     }
 }
