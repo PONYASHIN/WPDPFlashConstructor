@@ -11,6 +11,7 @@ English:
 4. For those who don't even like it, I added software for disk partitioning and disk verification.
 5. I unpacked the files of my WinPE assembly (but so far the button is not active because I want to).
 
+
 Russian:
 1.Привязал установку загрузчика Windows к файлам в системе.
 2.Добавил помощь в выборе загрузчика(пока только на русском).
