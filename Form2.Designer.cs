@@ -77,7 +77,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(6, 11);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(404, 25);
+            this.comboBox1.Size = new System.Drawing.Size(399, 25);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.Text = "1. Выбери диск";
             // 
@@ -85,9 +85,9 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Emoji", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(416, 12);
+            this.button1.Location = new System.Drawing.Point(411, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 23);
+            this.button1.Size = new System.Drawing.Size(86, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "2. Старт";
             this.button1.UseVisualStyleBackColor = true;
@@ -176,9 +176,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(416, 38);
+            this.button2.Location = new System.Drawing.Point(411, 38);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(81, 25);
+            this.button2.Size = new System.Drawing.Size(86, 25);
             this.button2.TabIndex = 6;
             this.button2.Text = "Bootice";
             this.button2.UseVisualStyleBackColor = false;
@@ -269,9 +269,9 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(416, 12);
+            this.progressBar1.Location = new System.Drawing.Point(411, 12);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(81, 25);
+            this.progressBar1.Size = new System.Drawing.Size(86, 25);
             this.progressBar1.TabIndex = 9;
             this.progressBar1.Visible = false;
             // 
@@ -279,13 +279,13 @@
             // 
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Emoji", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Segoe UI Emoji", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(416, 69);
+            this.button3.Location = new System.Drawing.Point(411, 69);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(81, 25);
+            this.button3.Size = new System.Drawing.Size(86, 25);
             this.button3.TabIndex = 10;
-            this.button3.Text = "PartAssistant";
+            this.button3.Text = "DiskMgmnt";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
@@ -337,9 +337,9 @@
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI Emoji", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(336, 38);
+            this.button5.Location = new System.Drawing.Point(320, 39);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(74, 25);
+            this.button5.Size = new System.Drawing.Size(85, 25);
             this.button5.TabIndex = 15;
             this.button5.Text = "ChkDiskGui";
             this.button5.UseVisualStyleBackColor = true;
@@ -352,7 +352,7 @@
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(269, 69);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(141, 25);
+            this.button6.Size = new System.Drawing.Size(136, 25);
             this.button6.TabIndex = 16;
             this.button6.Text = "Файлы для сборника.\r\n";
             this.button6.UseVisualStyleBackColor = true;
@@ -364,7 +364,7 @@
             this.button7.Font = new System.Drawing.Font("Segoe UI Emoji", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(269, 38);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(61, 25);
+            this.button7.Size = new System.Drawing.Size(45, 25);
             this.button7.TabIndex = 17;
             this.button7.Text = "QBT";
             this.button7.UseVisualStyleBackColor = true;

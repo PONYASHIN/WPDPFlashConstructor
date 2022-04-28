@@ -271,10 +271,7 @@ namespace WPDP_Flash_Constructor
         {
             await Task.Run(() =>
             {
-                File.WriteAllBytes("PT.exe", Properties.Resources.PartAssist);
-                Process bt = Process.Start(new ProcessStartInfo { FileName = "PT.exe" });
-                bt.WaitForExit();
-                File.Delete("PT.exe");
+                Process.Start(new ProcessStartInfo { FileName = @"C:\Windows\System32\diskmgmt.msc" });
             });
         }
         async private void Button5_Click(object sender, EventArgs e)
