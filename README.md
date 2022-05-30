@@ -3,7 +3,7 @@
 
 i am govnocoder no comments:D
 
-ChangeLog 28.04.22
+ChangeLog 31.05.22
 
 English:
 1. Removed all bootloaders except for the one used in my WinPE buil.
