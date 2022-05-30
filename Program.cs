@@ -17,7 +17,6 @@ namespace WPDP_Flash_Constructor
             Application.ThreadException += new ThreadExceptionEventHandler(Error);
             Application.Run(new Form1());
         }
-
         static void Error(object sender, ThreadExceptionEventArgs e)
         {
             MessageBox.Show(e.Exception.ToString());

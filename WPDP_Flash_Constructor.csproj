@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>C:\Users\Dmitry\Desktop\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -100,14 +100,9 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Help.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Help.Designer.cs">
-      <DependentUpon>Help.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings.cs" />
     <Compile Include="WinPEFiles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,9 +114,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Help.resx">
-      <DependentUpon>Help.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -176,15 +168,7 @@
     <None Include="Resources\BOOTICE.exe" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Grub2.zip" />
-    <None Include="Resources\Grub2cfg.cfg" />
     <None Include="Resources\VK-Icon_icon-icons.com_52860.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bootsect.exe" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PartAssist.exe" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\russia.png" />
@@ -194,17 +178,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Project2.ico" />
-    <None Include="Resources\7zdll.dll" />
-    <None Include="Resources\7zexe.exe" />
-    <None Include="Resources\7z.dll" />
-    <None Include="Resources\7z.exe" />
-    <None Include="Resources\Ws.png" />
-    <None Include="Resources\abcmd.exe" />
-    <None Include="Resources\QemuBootTester.exe" />
-    <None Include="Resources\xorbootLeg.iso" />
+    <None Include="Resources\unarc.exe" />
     <None Include="Resources\YouTube.png" />
-    <None Include="Resources\grubinst.exe" />
-    <None Include="Resources\ChkDskGui.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
 </Project>
